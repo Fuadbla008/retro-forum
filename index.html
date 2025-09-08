@@ -81,19 +81,50 @@
         </main>
 
         <!-- discussion canvas -->
-        <section class="discussion-canvas">
+        <section class="discussion-canvas grid sm:grid-cols-1 lg:grid-cols-3 gap-16">
             <!-- canvas header -->
-             <div>
+             <div class="col-span-3 row-span-1">
                 <h1>Let's Discuss</h1>
                 <p>yes you can run unit tests and view the results directly within the app. The intregrated testing allow for a steamlined.</p>
              </div>
 
              <!-- post append from api -->
-             <main>
-                <div class="single-card">
-                    
+             <main class="sm:col-span-1 lg:col-span-2 row-span-1">
+                <div class="single-card flex gap-4 p-5 border-2 border-gray-300 rounded-2xl mb-5">
+                    <div class="">
+                        <img src="./asset/person_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" >
+                    </div>
+
+                    <div class="">
+                    <div>
+                        <h1 class="text-2xl font-bold">John Doe</h1>
+                        <p class="text-gray-400">Posted on: 20th Aug 2023</p>
+                    </div>
+                    <div>
+                        <h1>10 kids are unware</h1>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="flex gap-4">
+                        <button>menu</button>
+                        <button>reply</button>
+                        <button>share</button>
+                    </div>
+                    </div>
                 </div>
              </main>
+
+             <!-- unread msg section -->
+              <div>
+                <div class="flex justify-between items-center mb-5">
+                    <h1 class="text-2xl font-bold">Unread Messages</h1>
+                    <button class="bg-blue-400 text-white p-4 rounded-full">Mark all as read</button>
+                </div>
+              </div>
         </section>
     </div>
 </body>
